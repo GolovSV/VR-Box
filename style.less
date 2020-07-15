@@ -1,0 +1,1633 @@
+// Fonts-family start
+.reg() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+}
+
+.bold() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+// Fonts-family end
+
+// Colors start
+@btn-color: #94ca2d;
+@offer: #18a7d0;
+@white: #fff;
+// Colors end
+
+// Basic settings start
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+.slick-slider {
+    min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+/*// pop up*/
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: #FFF;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+/*pop up ends */
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.button {
+    // max-width: 270px;
+    max-height: 62px;
+    border-radius: 3px;
+    background-color: @btn-color;
+    color: @white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 1.2rem 2.2rem;
+    border: none;
+}
+
+// Basic settings end
+
+// Header start
+.header {
+    background-color: #000001;
+    opacity: 0.62;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 1.5rem;
+
+    }
+
+    &__text {
+        color: @white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__phone {
+        color: @white;
+        font-size: 25px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    &__callback {
+        color: @btn-color;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4% 0;
+    }
+}
+
+// Header end 
+
+// Main start
+
+// Main end 
+
+// Intro starts
+
+.intro {
+    background-image: url(../media/Main/Intro/bg.png);
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+    }
+
+    &__offer {
+        max-width: 72%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2 {
+            margin-top: 11%;
+            margin-bottom: 1.8rem;
+            text-shadow: 0 1px 0 #272b25;
+            font-size: 39px;
+            font-weight: 700;
+
+
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 2.8rem;
+
+            img {
+                max-width: 419px;
+                margin-right: 1rem;
+
+            }
+        }
+
+
+    }
+
+    &__vr {
+        margin-top: 4.5rem;
+        max-width: 419px;
+    }
+
+    &__dino {
+        max-width: 750px;
+        margin-right: 1rem;
+    }
+}
+
+// Intro ends 
+
+// Whatis starts
+
+.whatis {
+    background-color: #f8f8f0;
+
+    &__info {
+        h2 {
+            margin-top: 7%;
+            font-size: 35px;
+            font-weight: 400;
+            font-variant: small-caps;
+            .bold();
+            margin-bottom: 7%;
+        }
+
+        p {
+            max-width: 40.9rem;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__wrapper {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__packages {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        min-height: 16opx;
+
+        li {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        h4 {
+            font-size: 20px;
+            .bold();
+            margin-bottom: 1rem;
+        }
+
+        span {
+            color: #b61919;
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+
+    &__set-one {
+        p {
+            margin-top: 1.4rem;
+        }
+    }
+
+    &__button {
+        max-width: 507px;
+        padding: 22px;
+        margin-bottom: 2rem;
+
+    }
+
+    &__pic {
+        max-width: 540px;
+        margin-left: 4rem;
+        margin-top: -3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        p {
+            // margin-left: 10rem;
+            max-width: 15rem;
+
+        }
+
+        span {
+            font-size: 25px;
+            font-weight: 500;
+            max-width: 15rem;
+        }
+    }
+
+}
+
+// Whatis ends
+
+
+// Advantages-one starts
+
+.advantages-one {
+    background-color: #fcfcf6;
+
+    &__wrapper {
+        padding-top: 9rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__travel {
+        position: relative;
+
+        img {
+            margin-bottom: 117px;
+        }
+
+        h3 {
+            max-width: 500px;
+            color: #000000;
+            font-size: 22px;
+            .bold();
+            margin-bottom: 17px;
+        }
+
+        h3::before {
+            content: url(../media/Main/advantages/earth.png);
+            position: absolute;
+            left: -3.5rem;
+        }
+
+        p {
+            max-width: 400px;
+            color: #000000;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 120px;
+        }
+    }
+
+    &__movies {
+        position: relative;
+
+        h3 {
+            margin-top: 16%;
+            margin-bottom: 5%;
+            max-width: 320px;
+            color: #000000;
+            font-size: 22px;
+            .bold();
+        }
+
+        h3::before {
+            content: url(../media/Main/advantages/movie.png);
+            position: absolute;
+            left: -3.5rem;
+        }
+
+        p {
+            max-width: 395px;
+            color: #000000;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
+
+
+// Advantages-one ends 
+
+// Offer starts
+.offer {
+    background: url(../media/Main/offer/фон.jpg) no-repeat center;
+    min-height: 425px;
+
+    &__wrap {
+        display: flex;
+
+        img {
+            width: 18px;
+            height: 66px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__order {
+        margin-top: 4rem;
+
+        h2 {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 40px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &_blue {
+            max-width: 492px;
+            padding: 11px 20px;
+            background-color: #18a7d0;
+            margin-bottom: 3rem;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            width: 34px;
+            height: 38px;
+            margin-right: 9px;
+        }
+    }
+
+    &__time {
+        display: flex;
+
+        p {
+            max-width: 164px;
+        }
+    }
+
+    &__delivery {
+        display: flex;
+
+        p {
+            max-width: 191px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        width: 400px;
+        height: 377px;
+        border-radius: 3px;
+        border: 4px solid #21a3af;
+        background-color: #000000;
+        padding: 3% 4%;
+        color: @white;
+
+        p {
+            max-width: 232px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        small {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    &__input-wrapper {
+        padding: 18px 24px;
+        margin-bottom: 8px;
+        border-radius: 3px;
+        border: 2px solid #ffffff;
+
+        input {
+            background-color: #000;
+            border: none;
+            color: @white;
+            outline: none;
+            margin-bottom: 5px;
+
+        }
+    }
+
+    &__button {
+        margin-bottom: 1.2rem;
+        max-width: 246px;
+        text-align: center;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+// Offer ends
+
+
+// advantages-two starts
+
+.advantages-two {
+    background-color: #fcfcf6;
+
+    &__game {
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__sport {
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__wrapper {
+        padding-top: 9rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__game-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        img {
+            width: 43px;
+            height: 34px;
+            margin-right: 1rem;
+        }
+    }
+
+    &__sport-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        img {
+            width: 43px;
+            height: 38px;
+            margin-right: 1rem;
+
+        }
+    }
+
+    h3 {
+        max-width: 295px;
+        color: #000000;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    &__vr-game {
+        margin-top: -4rem;
+        margin-bottom: 7rem;
+    }
+
+    &__vr-sport {
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+// advantages-two ends
+
+
+// Working starts
+
+.working {
+    background: url(../media/Main/Working/workong-bg_plus.jpg) no-repeat center;
+
+    &__row {
+
+        h2 {
+            padding-top: 7rem;
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 35px;
+            .bold();
+        }
+
+        h2::after {
+            content: url(../media/Main/Working/blue-line.png);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+    }
+
+    &__stages {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+
+        p {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            max-width: 254px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+
+        img {
+            max-width: 140px;
+            max-height: 145px;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    &__stages-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+
+            max-width: 223px;
+            max-height: 41px;
+        }
+
+
+    }
+
+    &__stages-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 201px;
+            max-height: 41px;
+        }
+    }
+
+    &__stages-three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 235px;
+            max-height: 41px;
+        }
+    }
+
+
+    &__stages-four {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 254px;
+            max-height: 41px;
+        }
+    }
+}
+
+
+// Working ends 
+
+// Сompatibility starts
+
+.Сompatibility {
+
+
+    h2 {
+        max-width: 412px;
+        font-size: 35px;
+        .bold();
+        margin-bottom: 5rem;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            margin-bottom: .5rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &__ios {
+        margin-right: 5%;
+    }
+
+    &__android {
+        margin-right: 5%;
+    }
+
+    &__vr {
+        img {
+            margin-top: -2rem;
+            max-width: 565px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            max-width: 539px;
+        }
+    }
+}
+
+//Сompatibility ends
+
+// video-link starts
+
+.video-link {
+    // background: url(../media/Main/Video-link/video-link-bg.jpg) no-repeat center;
+
+    h2 {
+        padding-top: 5rem;
+        max-width: 464px;
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+
+        img {
+            margin-bottom: 1rem;
+        }
+
+
+        span {
+            margin-bottom: 5rem;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+// video-link ends 
+
+// games starts
+
+
+.games {
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3%;
+
+        h2 {
+            padding-top: 5rem;
+            max-width: 809px;
+            font-size: 35px;
+            .bold();
+        }
+
+        h2::after {
+            content: url(../media/Main/Working/blue-line.png);
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+
+    &__examples {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            max-width: 164px;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            max-width: 365px;
+            min-height: 113px;
+            font-size: 17px;
+            line-height: 24px;
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    &__titans {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin-left: -6.5rem;
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    &__zombie {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin-left: -6.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__sisters {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin-bottom: 2rem;
+            max-height: 132px;
+            max-width: 268px;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+
+
+// games ends
+
+
+// Feedbacks starts
+
+.feedbacks {
+    background-color: #f8f8f0;
+   
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        max-width: 548px;
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    h2::after {
+        content: url(../media/Main/Working/blue-line.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 115px;
+        height: 115px;
+        margin-right: 2rem;
+    }
+
+    &__row {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__block {
+       
+        max-width: 582px;
+        padding: 2rem 2rem 4rem 2rem;
+
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            max-width: 530px;
+        }
+
+    }
+
+    &__client-info {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+            border-radius: 100px;
+            object-fit: cover;
+
+        }
+
+        h6 {
+            max-width: 203px;
+            font-size: 17px;
+            font-weight: 500;
+            .bold();
+        }
+    }
+}
+
+.feedbacks__row {
+    position: relative;
+    padding: 0px 60px;
+}
+
+@media (max-width:767px) {
+    .feedbacks__row {
+        padding: 0px 40px;
+    }
+}
+
+.feedbacks__row .slick-arrow {
+    position: absolute;
+    border: none;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+}
+
+.feedbacks__row .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/sl-arrow_l.svg') 0 0 / cover no-repeat;
+}
+
+.feedbacks__row .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/sl-arrow_r.svg') 0 0 / cover no-repeat;
+}
+
+.feedbacks__row .slick-arrow.slick-disabled {
+    opacity: 0.2;
+}
+
+// Feedbacks ends 
+
+// About-us starts
+
+.about-us {
+    background-color: #fcfcf6;
+
+
+    &__row {
+        padding-bottom: 3rem;
+
+        h2 {
+            padding-top: 5rem;
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 35px;
+            .bold();
+        }
+
+        h2::after {
+            content: url(../media/Main/Working/blue-line.png);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+    }
+
+    &__stages {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+
+
+        p {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            max-width: 254px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+
+        img {
+            max-width: 140px;
+            max-height: 145px;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    &__stages-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+
+            max-width: 223px;
+            max-height: 41px;
+        }
+
+
+    }
+
+    &__stages-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 201px;
+            max-height: 41px;
+        }
+    }
+
+    &__stages-three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 235px;
+            max-height: 41px;
+        }
+    }
+
+
+    &__stages-four {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 254px;
+            max-height: 41px;
+        }
+    }
+}
+
+
+// About-us ends 
+
+//  offer-second starts
+.offer-second {
+    background: url(../media/Main/offer/Слой_35.jpg) center no-repeat;
+}
+
+//  offer-second ends 
+
+// questions starts
+
+.questions {
+    &__support {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            padding-top: 6rem;
+            margin-bottom: 2rem;
+            font-size: 35px;
+            .bold();
+        }
+
+        a {
+            margin-bottom: 5rem;
+            font-size: 18px;
+            font-weight: 500;
+            .bold();
+            text-decoration: underline dashed;
+            color: #000;
+        }
+    }
+}
+
+// questions ends 
+.footer {
+    background-color: black;
+}
+
+.rellax-img_green{
+    float: right;
+}
+
+// MEDIA
+
+@media(max-width: 1024px) {
+    .wrapper {
+        padding: 0 2rem;
+    }
+
+    .intro__wrapper {
+        justify-content: center;
+    }
+
+    .whatis {
+        &__info {
+            span {
+                font-size: 20px;
+            }
+        }
+
+        &__set-one {
+            ul {
+                margin-bottom: 3.1rem;
+            }
+        }
+
+        .button {
+            font-weight: 500;
+        }
+    }
+
+    .advantages-one__wrapper {
+        padding: 9rem 2rem 0;
+    }
+
+    .Сompatibility__vr {
+
+        p {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        img {
+            max-width: 430px;
+            margin-bottom: 5%;
+            margin-top: 4%;
+        }
+
+    }
+
+}
+
+@media(max-width: 768px) {
+    .intro {
+        &__offer {
+            h2 {
+                font-size: 21px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+
+        &__vr {
+            margin-top: 4rem;
+            max-width: 350px;
+        }
+
+        &__dino {
+            max-width: 300px;
+        }
+    }
+    .rellax-img_green  img {
+        display:none;
+    }
+
+    .whatis {
+        &__info {
+            p {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            li {
+                font-size: 15px;
+            }
+
+            h4 {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 15px;
+            }
+        }
+
+        .button {
+            font-size: 1.2vh;
+        }
+    }
+
+    .advantages-one__wrapper {
+        padding: 5rem 2rem 0;
+    }
+
+    .advantages-two__sport {
+        margin-left: 3%;
+    }
+
+    .offer {
+        &__order {
+            margin-right: 4%;
+
+            h2 {
+                margin-bottom: 6%;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &__order_blue {
+            padding: 8px 16px;
+        }
+
+        &__wrap {
+            img {
+                height: 68px;
+                margin-left: -0.8px;
+            }
+        }
+
+        &__form {
+            padding: 2% 3%;
+            max-height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        &__button {
+            width: 270px;
+            font-size: 17px
+        }
+    }
+
+    .Сompatibility {
+
+        h2 {
+            margin-bottom: 5%;
+        }
+
+
+        &__vr {
+            img {
+                max-width: 300px;
+            }
+
+            p {
+                font-size: 13px;
+                width: 310px;
+            }
+        }
+
+        &__phones {
+            padding-right: 2%;
+
+            img {
+                max-width: 100px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    .about-us {
+
+        &__row {
+            h2 {
+                padding-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        &__stages {
+            p {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .games {
+        &__links {
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        &__examples {
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .working {
+        &__row {
+            h2 {
+                padding-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+@media(max-width: 414px) {
+
+
+    .button {
+        max-height: 62px;
+        border-radius: 3px;
+        background-color: #94ca2d;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border: none;
+    }
+
+    .header__wrapper {
+        flex-direction: column;
+    }
+
+    .header__text {
+        font-size: 13px;
+    }
+
+    .header__phone {
+        font-size: 20px;
+    }
+
+    .offer__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__offer{
+        padding-left: 6%;
+    }
+
+    .intro__vr {
+        margin-top: 7%;
+        max-width: 200px;
+    }
+
+    .intro__dino {
+        max-width: 200px;
+    }
+
+    .whatis__wrapper {
+        flex-direction: column;
+    }
+
+    .whatis__info {
+
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .whatis__packages {
+        h4 {
+            font-size: 13px;
+        }
+    }
+
+    .whatis__pic {
+        max-width: 500px;
+        margin-left: 0;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rellax-img_green {
+        display: none;
+    }
+    .advantages-one__wrapper {
+        padding: 10% 5% 0;
+    }
+
+    .offer {
+        background: #BC8F8F;
+    }
+
+    .offer__order {
+        margin-top: 0;
+        margin-right: 0;
+
+        h2 {
+            margin-bottom: 2%;
+            color: black;
+            font-size: 16px;
+            line-height: inherit;
+        }
+
+        p {
+            font-size: 13px;
+            margin-bottom: 2%;
+        }
+    }
+
+    .offer__wrap {
+        img {
+            display: none;
+        }
+    }
+
+
+    .offer__info {
+        flex-direction: column;
+
+        img {
+            display: none;
+        }
+    }
+
+
+    .offer__form {
+        max-width: 260px;
+        padding: 2% 3%;
+        max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Сompatibility__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+    .working__stages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+
+    .games__links {
+        h2 {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+
+
+    .games__examples {
+        p {
+            font-size: 15px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .games__titans {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .games__zombie {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .games__sisters {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feedbacks h2 {
+        max-width: 548px;
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .about-us__stages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about-us__stages p {
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    .advantages-one__wrapper {
+        h3::before{
+            display:none;
+        }
+        padding: 10% 5% 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advantages-two__wrapper {
+        padding-top: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 375px){
+.intro__dino {
+
+       display:none;
+   
+}
+.offer__order {
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+}
+.offer__info {
+    flex-direction: column;
+    align-items: center;
+}
+}
