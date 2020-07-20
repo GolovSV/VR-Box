@@ -393,7 +393,7 @@ background-image: url(../media/Main/Intro/bg.png);
   border: 2px solid #ffffff;
 }
 .offer__input-wrapper input {
-  background-color: #000;
+  background-color: rgba(0,0,0,0);
   border: none;
   color: #fff;
   outline: none;
